@@ -28,10 +28,10 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x8000 --ramdisk_offset 0x01000000 --tag
 
 # phony empty kernel to satisfy build system, but this device does not
 # include a kernel in the recovery image -- flash to recovery_ramdisk
-TARGET_PREBUILT_KERNEL := device/huawei/blanc/dummykernel
+TARGET_PREBUILT_KERNEL := device/huawei/hi3660/dummykernel
 # else uncomment below to build from sauce
-# TARGET_KERNEL_SOURCE := kernel/huawei/blanc
-# TARGET_KERNEL_CONFIG := blanc_defconfig
+# TARGET_KERNEL_SOURCE := kernel/huawei/hi3660
+# TARGET_KERNEL_CONFIG := hi3660_defconfig
 
 # NOTE I only bother properly setting recovery image size
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
@@ -53,6 +53,6 @@ TW_NO_SCREEN_BLANK := true
 TW_DEFAULT_BRIGHTNESS := "2048"
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 # Device crashes if /sbin/modprobe is present so this is needed:
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/blanc/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/hi3660/custombootimg.mk
 # MTP will not work until we update it to support ffs
 TW_EXCLUDE_MTP := true

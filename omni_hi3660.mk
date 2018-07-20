@@ -31,15 +31,15 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/huawei/blanc/dummykernel:kernel
+    device/huawei/hi3660/dummykernel:kernel
 
-PRODUCT_NAME := omni_blanc
-PRODUCT_DEVICE := blanc
+PRODUCT_NAME := omni_hi3660
+PRODUCT_DEVICE := hi3660
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := Honor View 10
+PRODUCT_MODEL := Mate 9
 PRODUCT_MANUFACTURER := Huawei
 
 # Kernel inline build
-#TARGET_KERNEL_CONFIG := blanc_defconfig
-#TARGET_VARIANT_CONFIG := blanc_defconfig
-#TARGET_SELINUX_CONFIG := blanc_defconfig
+#TARGET_KERNEL_CONFIG := hi3660_defconfig
+#TARGET_VARIANT_CONFIG := hi3660_defconfig
+#TARGET_SELINUX_CONFIG := hi3660_defconfig
